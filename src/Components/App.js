@@ -7,8 +7,14 @@ import GifList from './GifList';
 
 function App() {
 
-  const [data, setData] = useState([]); // declare state
+  const [data, setData] = useState([]);
+  const [query, setQuery] = useState('cats');
 
+  useEffect(() => {
+    axios(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=F6dbdsD9RXRBIUX9HzVTt7sjbcUYTE3l`)
+      .then(response => setData(response.data.data))
+      .catch(error => console.log('Error fetching and parsing data', error))
+  }, []);
   return (
     <>
       <div className="main-header">
