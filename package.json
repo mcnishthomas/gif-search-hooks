@@ -2,7 +2,7 @@
   "name": "gif-search",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tomm.github.io/gif-search-hooks",
+  "homepage": "http://tomm.github.io/gif-search-hooks",
   "dependencies": {
     "axios": "^0.19.2",
     "gh-pages": "^4.0.0",
