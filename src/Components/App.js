@@ -24,7 +24,7 @@ function App() {
       <div className="main-header">
         <div className="inner">
           <h1 className="main-title">GifSearch</h1>
-          <SearchForm />
+          <SearchForm onSearch={performSearch} />
         </div>
       </div>
       <div className="main-content">
